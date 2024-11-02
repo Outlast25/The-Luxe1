@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Luxe</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="shortcut icon" href="IMG/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>   
+    <nav>
+    <img src="IMG/Logo.jpg" alt="logo" class="img-logo">    
+    <div id="pestanas">
+        <h2>The Luxe: Agencia De Eventos</h2>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+    <br>
+
+    <form action="https://formsubmit.co/derekuriel11@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="http://localhost/Contacto.html">
+        <div class="form-image">
+            <br>
+            <p1>Llena el formulario y en breve nos pondremos en contacto contigo. </p1>
+            <br> <br> <br> 
+            <img src="IMG/Jardin Pedregal.jpg" alt="Imagen de contacto" width="200">
+        </div>
+        <div class="form-content">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+    
+            <label for="tipo_evento">Tipo de evento:</label>
+            <input type="text" id="tipo_evento" name="tipo_evento" required>
+    
+            <label for="num_personas">Número de personas:</label>
+            <input type="number" id="num_personas" name="num_personas" required>
+    
+            <label for="fecha_evento">Fecha del evento:</label>
+            <input type="date" id="fecha_evento" name="fecha_evento" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+            <button type="submit">ENVIAR</button>
+            <input type="hidden" name="_captcha" value="false">
+
+        </div>
+    </form>
+
+<br>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h1>Números de Contacto</h1>
+                <p><h3>55 29 68 81 96</h3></p>
+                <p><h3>56 16 67 35 72</h3></p>
+            </div>
+            <div class="content-foo">
+                <h1>Redes Sociales</h1>
+                <a href="https://www.facebook.com/profile.php?id=61558718141479" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@the.luxe.agencia?_t=8ltFvlkEcCs&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/the_luxe_agencia_de_eventos/?igsh=MWI0MXd2bXhwMDM3NA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <h2 class="titulo-final">©The Luxe</h2>
+    </footer>
+</p>
+</body>
+</html>

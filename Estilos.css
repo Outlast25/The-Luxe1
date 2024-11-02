@@ -1,0 +1,553 @@
+/* Estilos base para el cuerpo y la barra de navegación */
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%; /* Ajusté el espaciado en porcentajes */
+    font-weight: bold;
+}
+
+/* Consulta de medios para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Cambié la dirección a vertical */
+        text-align: center; /* Centré el texto verticalmente */
+    }
+}
+
+
+
+/* Estilos base para las pestañas */
+#pestanas ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    border-bottom: #F78F0B 3px solid;
+}
+
+#pestanas li {
+    margin-right: 20px; /* Ajusté el margen derecho para que las pestañas estén más cerca */
+}
+
+#pestanas li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px; /* Reduje el tamaño de fuente para dispositivos móviles */
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+#pestanas li a:hover {
+    border-bottom-color: #0074D9;
+}
+
+/* Consulta de medios para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  
+    #pestanas li {
+        margin-right: 0; /* Eliminé el margen derecho en pantallas pequeñas */
+        margin-bottom: 10px; /* Agregué un margen inferior entre las pestañas */
+    }
+}
+
+
+
+h2{
+	text-align: center;
+	font-weight: bold; 
+	font-size: 30px; 
+	color: #ffffff;	
+}
+
+
+
+/* Estilos para la clase .img-logo */
+.img-logo {
+    width: 20%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+
+}
+
+/* Estilos para la clase .imagen-nosotros */
+.imagen-nosotros {
+    width: 30%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    padding: 0 0 10px 0; /* Ajusté el espaciado */
+}
+
+
+
+
+.contenedor-nosotros {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap; /* Añade esto para que los elementos se ajusten en varias filas */
+}
+
+.contenedor-nosotros .contenedor-textos {
+	width: 55%;
+}
+
+.contenedor-textos h3 {
+	margin-bottom: 15px;
+}
+
+.contenedor-textos h3 span {
+	background: #F78F0B;
+	color: #FFF;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 8px;
+}
+
+.contenedor-textos p {
+	padding: 0px 0px 30px 15px;
+	font-weight: 300;
+	text-align: justify;
+}
+
+
+.titulo 
+{
+	color:#ffffff;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.portafolio
+{
+	background: #333;
+}
+
+ .galeria-port
+ {
+ 	display: flex;
+ 	justify-content: space-evenly;
+ 	flex-wrap: wrap;
+ }
+
+ .imagen-port
+ {
+ 	width: 24%;
+ 	height: 200px;
+ 	margin-bottom: 10px;
+ 	overflow: hidden;
+ 	position: relative;
+ 	cursor: pointer;
+ 	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5); 
+ }
+
+ .imagen-port >img
+ {
+ 	width: 100%;
+ 	height: 100%;
+ 	object-fit: cover;
+ 	display: block;
+ }
+
+
+
+
+ .hover-galeria
+ {
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	top: 0;
+ 	transform: scale(0);
+ 	background: hsla(35, 96%, 49%, 0.919);
+ 	transition: transform .5s;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ }
+
+ .hover-galeria img
+ {
+ 	width: 50px;
+ }
+
+ .hover-galeria p 
+ {
+ 	color: #FFF;
+ }
+
+ .imagen-port:hover .hover-galeria
+ {
+ 	transform: scale(1);
+ }
+ 
+ 
+/* Estilos para el footer */
+footer {
+	background: #F78F0B;
+	padding: 10px 0;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+/* Contenedor principal del footer */
+.contenedor-footer {
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	max-width: 800px; /* Limita el ancho del contenido */
+	padding-bottom: 1px;
+	border-bottom: 1px solid #000000;
+}
+
+/* Estilos para el contenido dentro del footer */
+.content-foo {
+	margin: 20px;
+}
+
+.content-foo h1 {
+	font-size: 24px;
+	color: black;
+}
+
+.content-foo p {
+	font-size: 18px;
+	color: black;
+}
+
+/* Estilos para los enlaces dentro del footer */
+.contenedor-footer a {
+	color: black; /* Color de los iconos */
+	font-size: 24px; /* Tamaño de los iconos */
+	margin: 20px 10px 0; /* Espaciado entre los iconos y margen superior */
+	text-decoration: none; /* Sin subrayado */
+}
+
+.contenedor-footer a:hover {
+	color: #ffffff; /* Color al pasar el ratón */
+}
+
+/* Estilos para el título final */
+.titulo-final {
+	font-size: 24px;
+	margin: 20px 0 0;
+	color: black;
+}
+
+   /* Estilos para mejorar la apariencia del formulario */
+       
+/* Estilos generales del formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #daf2dc;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Añadido para que los elementos se ajusten al ancho */
+}
+
+/* Sección de la imagen */
+.form-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-image img {
+    width: 90%;
+    height: auto; /* Cambiado para mantener la proporción */
+    margin-bottom: 10px;
+}
+
+/* Contenido del formulario */
+.form-content {
+    flex: 2;
+}
+
+/* Estilos para etiquetas, inputs y textarea */
+label {
+    display: block;
+    margin-bottom: 1px;
+}
+
+input,
+textarea {
+    width: 100%; /* Cambiado para ocupar todo el ancho disponible */
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #81b7d2;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de envío */
+button {
+    background-color: #daf2dc;
+    color: #000000;
+    border: none;
+    padding: 10px 20px; /* Ajustado para que sea más proporcionado */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el párrafo */
+p1 {
+    color: #81b7d2;
+    font-family: "Choko Milky", cursive;
+    font-size: 21px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* Estilos para el menú de hamburguesa */
+.menu-container {
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.menu-icon span {
+    background: #F78F0B; /* Color tomate */
+    height: 3px;
+    margin: 3px 0; /* Reducido el margen */
+    width: 25px;
+    transition: all 0.3s;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    background: #F78F0B; /* Color caqui claro */
+    width: 200px; /* Ajustado para que ocupe menos espacio */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    border-bottom: 1px solid #ffffff; 
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px; 
+    text-decoration: none;
+    color: #000;
+    transition: background 0.3s;
+}
+
+.menu ul li a:hover {
+    background: #ffdab9; 
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+}
+
+
+
+/* Servicios */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #F78F0B;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.service ul {
+    list-style-type: none;
+    padding: 0;
+}
+.service li {
+    margin-bottom: 10px;
+}
+.service h5 {
+    color: #FF6347;
+    margin: 0;
+}
+.service p {
+    margin: 5px 0 15px 0;
+}
+@media screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    .service h3 {
+        font-size: 16px;
+    }
+    /* Otros estilos aquí */
+}
+
+
+/* Servicios Carrucel */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-style {
+    display: flex;
+}
+
+.img-style {
+    width: 280px; /* Ajusta el tamaño según tus necesidades */
+    height: 180px; /* Ajusta el tamaño según tus necesidades */
+    object-fit: cover; /* Esto asegura que la imagen se ajuste al tamaño sin distorsionarse */
+    margin-right: 20px; /* Espacio entre las imágenes */
+}
+
+ /* Media queries para diferentes tamaños de pantalla */
+ @media (max-width: 1200px) {
+    .img-style {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-style {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-style {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-style {
+        max-width: 120px;
+    }
+}
+
+
+/* Jardines */
+
+.imagen-nosotros1 {
+    width: 177px; /* Ajusta el tamaño según tus necesidades */
+    height: 220px; /* Ajusta el tamaño según tus necesidades */
+    object-fit: cover; /* Esto asegura que la imagen se ajuste al tamaño sin distorsionarse */
+    margin-right: 20px; /* Espacio entre las imágenes */
+}
+
+
+.image-container {
+    text-align: center;
+    margin: 50px auto;
+    
+}
+
+
+.informacion {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+    
+}
+
+.informacion:target {
+    display: block;
+}
+
+h1 {
+    color: #F78F0B;
+    text-align: center;
+	font-weight: bold; 
+	font-size: 30px; 
+}
+
+p {
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.close {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Nueva clase para eliminar el subrayado de los enlaces */
+.no-underline {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto */
+}
+
+.no-underline:hover {
+    color: #e76f51; /* Cambia el color al pasar el ratón, si lo deseas */
+}
+
+.informacion1 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+.informacion1:target {
+    display: block;
+}
+
